@@ -1,0 +1,83 @@
+/* ============ Стилизация блока Наша команда ================ */
+.for-padding {
+  background-color: $bg-secondary-color;
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
+
+.team-card {
+  background-color: $bg-main-color;
+  box-shadow: $box-shadow;
+  border-radius: 0px 0px 4px 4px;
+
+  .team-photo {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.team,
+.team-position {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.team-position {
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.social-list {
+  list-style: none;
+  padding-left: 0;
+
+  @include centeredFlex(flex);
+
+  & .social-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-align {
+  // justify-content: center;
+  padding: 0 32px 24px 32px;
+}
+
+.social {
+  @include centeredFlex(inline-flex);
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  text-decoration: none;
+  @include transitionProperty(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $akcent-color;
+  }
+}
+
+.icon-social {
+  width: 20px;
+  height: 20px;
+}
+
+.team-social {
+  fill: $svg-color;
+  @include transitionProperty(fill);
+
+  .social:hover &,
+  .social:focus & {
+    fill: $svg-hover-color;
+  }
+}

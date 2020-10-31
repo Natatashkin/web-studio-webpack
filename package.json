@@ -1,0 +1,31 @@
+{
+  "name": "web-studio-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "scss": "sass --watch scss:public/stylesheets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Natatashkin/web-studio-webpack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Natatashkin/web-studio-webpack/issues"
+  },
+  "homepage": "https://github.com/Natatashkin/web-studio-webpack#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.6",
+    "rerun-script": "^0.6.0",
+    "svg-inline-loader": "^0.8.2"
+  }
+}

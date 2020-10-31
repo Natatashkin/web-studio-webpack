@@ -1,0 +1,115 @@
+/* ==========Стилизация блока герой============ */
+.hero {
+  @include centeredFlex(flex);
+  text-align: center;
+  background-color: rgb(47, 48, 58);
+  background-image: linear-gradient(
+      to right,
+      $bg-overlay-color,
+      $bg-overlay-color
+    ),
+    url(../images/hero/hero-450/hero-480.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  height: 400px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        $bg-overlay-color,
+        $bg-overlay-color
+      ),
+      url(../images/hero/hero-450/hero-480@2x.jpg);
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(
+        to right,
+        $bg-overlay-color,
+        $bg-overlay-color
+      ),
+      url(../images/hero/hero-768/hero-768.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          $bg-overlay-color,
+          $bg-overlay-color
+        ),
+        url(../images/hero/hero-768/hero-768@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1599px) {
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        $bg-overlay-color,
+        $bg-overlay-color
+      ),
+      url(../images/hero/hero-1200/hero-1200.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          $bg-overlay-color,
+          $bg-overlay-color
+        ),
+        url(../images/hero/hero-1200/hero-1200@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    height: 600px;
+
+    // по-моему это градиент перекрывается следующим градиентом
+    background-color: #574433;
+    background-image: linear-gradient(
+        to right,
+        $bg-overlay-color,
+        $bg-overlay-color
+      ),
+      url(../images/hero/hero-1200/hero-1200.jpg);
+    background-size: contain;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          $bg-overlay-color,
+          $bg-overlay-color
+        ),
+        url(../images/hero/hero-1200/hero-1200@2x.jpg);
+    }
+  }
+}
+
+.cta {
+  color: $title-secondary;
+}
+
+.cta-title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: inherit;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}

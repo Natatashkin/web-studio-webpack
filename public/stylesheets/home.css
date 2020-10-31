@@ -1,0 +1,1116 @@
+@charset "UTF-8";
+.section-list, .main-menu {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  line-height: 1.14;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+main {
+  background-color: #ffffff;
+}
+
+address {
+  font-style: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212121;
+  letter-spacing: 0.03em;
+}
+
+footer {
+  background-color: #2f303a;
+  color: #ffffff;
+}
+
+/* -------Стили Логотипа-------- */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-top {
+  color: #000000;
+}
+
+.logo-bottom {
+  color: #ffffff;
+}
+
+.page-header {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #ececec;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav {
+  display: flex;
+  align-items: inherit;
+  justify-content: space-between;
+  min-width: 100%;
+  min-height: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .top-nav {
+    min-height: 80px;
+  }
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button.is-open .icon-burger {
+  display: none;
+}
+.menu-button:hover .icon-burger, .menu-button:focus .icon-burger, .menu-button:hover .icon-cross, .menu-button:focus .icon-cross {
+  fill: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-container {
+  background-color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 101%;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  .menu-container.is-open {
+    display: block;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-left: 85px;
+  }
+}
+
+.main-menu {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  .main-menu {
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 1.17;
+  }
+  .main-menu .item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-menu {
+    display: flex;
+  }
+  .main-menu .item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+  color: #212121;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:hover, .link:focus {
+  color: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .link {
+    padding: 32px 0;
+  }
+}
+
+.current {
+  position: relative;
+  color: #2196f3;
+}
+.current::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+}
+
+.top-address {
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .top-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .top-address {
+    display: flex;
+    align-items: center;
+    font-size: inherit;
+  }
+}
+
+.top-сontacts {
+  color: #757575;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.top-сontacts:hover, .top-сontacts:focus {
+  color: #2196f3;
+}
+@media screen and (max-width: 767px) {
+  .top-сontacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-address .top-сontacts:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .top-address .top-сontacts:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .top-address .top-сontacts:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+
+.envelope,
+.smartphone {
+  fill: #757575;
+  margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.top-сontacts:hover .envelope, .top-сontacts:focus .envelope,
+.top-сontacts:hover .smartphone,
+.top-сontacts:focus .smartphone {
+  fill: #2196f3;
+}
+
+.envelope {
+  width: 16px;
+  height: 11.2px;
+}
+
+.smartphone {
+  width: 10px;
+  height: 14.94px;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  color: inherit;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover, .button:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.button:active {
+  box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ==========Стилизация блока герой============ */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #2f303a;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/hero-450/hero-480.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/hero-450/hero-480@2x.jpg);
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/hero-768/hero-768.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/hero-768/hero-768@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .hero {
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/hero-1200/hero-1200.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/hero-1200/hero-1200@2x.jpg);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .hero {
+    height: 600px;
+    background-color: #574433;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/hero-1200/hero-1200.jpg);
+    background-size: contain;
+  }
+}
+@media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/hero-1200/hero-1200@2x.jpg);
+  }
+}
+
+.cta {
+  color: #ffffff;
+}
+
+.cta-title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: inherit;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .cta-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+/* ==============Модальное окно================= */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  padding: 94px 15px;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0);
+  background-color: none;
+}
+
+/* ---------- ФОрма в модальном окне------------- */
+.cta-form {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .cta-form {
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cta-form {
+    width: 528px;
+  }
+}
+
+/* ----------текст в форме-------------- */
+.form-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+  color: #212121;
+}
+@media screen and (max-width: 1199px) {
+  .form-title {
+    line-height: 1.5;
+  }
+}
+
+/* -----------------------поля формы-------------------- */
+.form-field {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding: 11px 16px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline-color: #2196f3;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translate(0, -50%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label {
+  transform: translate(-26px, -36px);
+  font-size: 12px;
+  line-height: 1.17;
+  color: #2196f3;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.form-icon,
+.close-icon {
+  width: 18px;
+  height: 18px;
+  fill: #212121;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translate(0, -50%);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus ~ .form-icon {
+  fill: #2196f3;
+}
+
+.form-comment {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.comment-text {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline-color: #2196f3;
+}
+
+.comment-label {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.comment-text:focus + .comment-label {
+  transform: translateY(-31px);
+  color: #2196f3;
+  font-size: 12px;
+  line-height: 1.17;
+}
+
+/* ------------поле с checkbox----------------------- */
+.form-policy {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+@media screen and (max-width: 1199px) {
+  .form-policy {
+    font-size: 12px;
+    line-height: 1.17;
+    width: 100%;
+  }
+}
+
+/* ------------- Вариант 1 -  с вложеным input в label ---------------*/
+.checkbox-icon {
+  display: inline-block;
+  flex-shrink: 0;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 3px;
+  background-color: #ffffff;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.policy:focus + .checkbox-icon {
+  border: 2px solid #2196f3;
+}
+.policy:checked + .checkbox-icon {
+  background-color: #2196f3;
+  background-image: url(../images/icon-check.svg);
+  background-origin: border-box;
+  border-color: #2196f3;
+}
+
+.policy {
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---------- Вариант 2 - кастомный checkbox через pesudo------------*/
+/* --------------- ссылка на условия и правила------------------- */
+.policy-link {
+  color: #2196f3;
+}
+@media screen and (max-width: 1199px) {
+  .policy-link {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+.form-button {
+  color: #ffffff;
+}
+
+/*============== Стилизация блока Преимущества =============== */
+.section {
+  color: #757575;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+  }
+}
+
+.top-padding {
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .top-padding {
+    padding-top: 94px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  margin-top: 0;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.section-item {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .section-item {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-item {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: 120px;
+  padding: 25px auto;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.icon .icon-antenna,
+.icon .icon-clock,
+.icon .icon-diagram,
+.icon .icon-astronaut {
+  width: 70px;
+  height: 70px;
+}
+
+.section-subtitle {
+  text-transform: uppercase;
+  font-size: inherit;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.section-text {
+  line-height: 1.71;
+  margin: 0;
+}
+
+/* ======= Стилизация блока чем мы занимаемся */
+.products {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .products {
+    display: block;
+  }
+}
+
+.wide-card {
+  width: calc((100% - 3 * 30px) / 3);
+  margin: 15px;
+  position: relative;
+}
+.wide-card .section-subtitle {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.secondary-color {
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding: 27px;
+  text-align: center;
+}
+
+/* ============ Стилизация блока Наша команда ================ */
+.for-padding {
+  background-color: #f5f4fa;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .for-padding {
+    padding: 94px 0;
+  }
+}
+
+.team-card {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-card .team-photo {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .team-card {
+    margin-bottom: 30px;
+  }
+}
+
+.team,
+.team-position {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.team-position {
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.social-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-list .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-align {
+  padding: 0 32px 24px 32px;
+}
+
+.social {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social:hover, .social:focus {
+  background-color: #2196f3;
+}
+
+.icon-social {
+  width: 20px;
+  height: 20px;
+}
+
+.team-social {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social:hover .team-social, .social:focus .team-social {
+  fill: #ffffff;
+}
+
+/* =========Стилизация блока Постоянные клиенты ================= */
+.client {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
+}
+@media screen and (min-width: 1200px) {
+  .client {
+    flex-wrap: nowrap;
+  }
+}
+
+.client-item {
+  flex-basis: calc((100% - 2 * 30px) / 2);
+  margin: 15px;
+}
+@media screen and (min-width: 768px) {
+  .client-item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
+}
+
+.section-logo {
+  width: 100%;
+  height: 90px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-logo:hover, .section-logo:focus {
+  border: 1px solid #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .section-logo {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-logo {
+    width: 170px;
+  }
+}
+
+.icon-client-first {
+  width: 45px;
+  height: 50px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-logo:hover .icon-client-first, .section-logo:focus .icon-client-first {
+  fill: #2196f3;
+}
+
+.icon-client-second {
+  width: 40px;
+  height: 52px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-logo:hover .icon-client-second, .section-logo:focus .icon-client-second {
+  fill: #2196f3;
+}
+
+.icon-client-third {
+  width: 41px;
+  height: 43px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-logo:hover .icon-client-third, .section-logo:focus .icon-client-third {
+  fill: #2196f3;
+}
+
+.icon-client-fourth {
+  width: 80px;
+  height: 42px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-logo:hover .icon-client-fourth, .section-logo:focus .icon-client-fourth {
+  fill: #2196f3;
+}
+
+.icon-client-fifth {
+  width: 59px;
+  height: 47px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-logo:hover .icon-client-fifth, .section-logo:focus .icon-client-fifth {
+  fill: #2196f3;
+}
+
+.icon-client-sixth {
+  width: 89px;
+  height: 46px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-logo:hover .icon-client-sixth, .section-logo:focus .icon-client-sixth {
+  fill: #2196f3;
+}
+
+/* --------- Стилизация формы подписки----------- */
+label[for=email] {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.subscribe-email {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 15px 16px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: inherit;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-email:focus, .subscribe-email:hover {
+  border-color: #2196f3;
+}
+.subscribe-email::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.25;
+  font-size: 16px;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .subscribe-email {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-email {
+    display: inline-block;
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+}
+
+.button-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+/* =======Стилизация футера=============== */
+.footer-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: left;
+  }
+}
+
+.bottom-address {
+  line-height: 1.71;
+  margin-bottom: 60px;
+}
+.bottom-address > .logo {
+  margin-bottom: 20px;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .bottom-address {
+    margin-right: 115px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bottom-address {
+    margin-right: 69px;
+  }
+}
+
+.bottom-contacts {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 8px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.bottom-contacts:hover, .bottom-contacts:focus {
+  color: #2196f3;
+}
+
+/* ------- Стилизацмя социальных иконок ---------*/
+.social-links {
+  margin-bottom: 60px;
+}
+
+.social-text {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.social-footer {
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=home.css.map */

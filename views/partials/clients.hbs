@@ -1,0 +1,16 @@
+<section class="section top-padding">
+    <div class="container">
+        <h2 class="section-title">Постоянные клиенты</h2>
+        <ul class="section-list client">
+            {{#each clients}}
+            <li class="section-item client-item">
+                <a href="#" class="section-logo">
+                    <svg class="icon-client-first">
+                        <use href="{{this}}"></use>
+                    </svg>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>

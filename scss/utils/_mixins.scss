@@ -1,0 +1,11 @@
+@mixin centeredFlex($type) {
+  display: $type;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transitionProperty($property) {
+  transition-property: $property;
+  transition-duration: 250ms;
+  transition-timing-function: $cubic;
+}

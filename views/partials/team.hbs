@@ -1,0 +1,23 @@
+<section class="section for-padding">
+    <div class="container">
+        <h2 class="section-title">Наша команда</h2>
+        <ul lang="ru-en" class="section-list team-list">
+            {{#each team}}
+            <li class="section-item team-card">
+                <picture>
+                    <source srcset="{{source-450-webp}}" type="image/webp" media="(max-width: 767px)" sizes="450px" />
+                    <source srcset="{{source-450-jpg}}" media="(max-width: 767px)" sizes="450px" />
+                    <source srcset="{{source-270-webp}}" type="image/webp" media="(min-width: 1200px)" sizes="270px" />
+                    <source srcset="{{source-270-jpg}}" media="(min-width: 1200px)" sizes="270px" />
+                    <source srcset="{{source-354-webp}}" type="image/webp" media="(min-width: 768px)" sizes="354px" />
+                    <source srcset="{{source-354-jpg}}" media="(min-width: 768px)" sizes="354px" />
+                    <img src="{{foto}}" alt="{{alt}}" class="team-photo" />
+                </picture>
+                <h3 class="section-subtitle team">{{name}}</h3>
+                <p class="section-text team-position">{{speciality}}</p>
+                {{> socialLinks}}
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>

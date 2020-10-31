@@ -1,0 +1,20 @@
+<section class="section top-padding">
+    <div class="container">
+        <h2 class="section-title visually-hidden">Наши преимущества</h2>
+        <ul class="section-list">
+            {{#each features}}
+            <li class="section-item features-item">
+                <div class="icon">
+                    <svg class="icon-antenna">
+                        <use href="{{url}}"></use>
+                    </svg>
+                </div>
+                <h3 class="section-subtitle">{{section-subtitle}}</h3>
+                <p class="section-text">
+                    {{section-text}}
+                </p>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>

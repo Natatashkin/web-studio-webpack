@@ -1,0 +1,114 @@
+[
+    {
+        "name": "Николай Кучеренко",
+        "specialty": "Product Designer",
+        "foto": "./images/nikolai/nikolai-450.jpg",
+        "alt": "фотография Николая Кучеренко",
+        "source-450-webp": "./images/nikolai/nikolai-450.webp    450w, ./images/nikolai/nikolai-450@2x.webp 900w",
+        "source-450-jpg": "./images/nikolai/nikolai-450.jpg    450w, ./images/nikolai/nikolai-450@2x.jpg 900w",
+        "source-270-webp": "./images/nikolai/nikolai-270.webp    270w, ./images/nikolai/nikolai-270@2x.webp 540w",
+        "source-270-jpg": "./images/nikolai/nikolai-270.jpg    270w, ./images/nikolai/nikolai-270@2x.jpg 540w",
+        "source-354-webp": "./images/nikolai/nikolai-354.webp    354w, ./images/nikolai/nikolai-354@2x.webp 708w",
+        "source-354-jpg": "./images/nikolai/nikolai-354.jpg    354w, ./images/nikolai/nikolai-354@2x.jpg 708w",
+        "social": [{
+            "link": "./images/sprite.svg#instagram",
+                "label": "Instagram link"
+            },
+            {
+            "link": "./images/sprite.svg#twitter",
+                "label": "Twitter link"
+            },
+            {
+            "link": "./images/sprite.svg#facebook",
+                "label": "Facebook link"
+            },
+            {
+            "link": "./images/sprite.svg#linkedin",
+                "label": "LinkedIn link"
+            }]
+    },
+    {
+        "name": "Ольга Иванова",
+        "specialty": "Frontend Developer",
+        "foto": "./images/olga/olga-450.jpg",
+        "alt": "фотография Ольги Ивановой",
+        "source-450-webp": "./images/olga/olga-450.webp    450w, ./images/olga/olga-450@2x.webp 900w",
+        "source-450-jpg": "./images/olga/olga-450.jpg    450w, ./images/olga/olga-450@2x.jpg 900w",
+        "source-270-webp": "./images/olga/olga-270.webp    270w, ./images/olga/olga-270@2x.webp 540w",
+        "source-270-jpg": "./images/olga/olga-270.jpg    270w, ./images/olga/olga-270@2x.jpg 540w",
+        "source-354-webp": "./images/olga/olga-354.webp    354w, ./images/olga/olga-354@2x.webp 708w",
+        "source-354-jpg": "./images/olga/olga-354.jpg    354w, ./images/olga/olga-354@2x.jpg 708w",
+        "social": [{
+            "link": "./images/sprite.svg#instagram",
+                "label": "Instagram link"
+            },
+            {
+            "link": "./images/sprite.svg#twitter",
+                "label": "Twitter link"
+            },
+            {
+            "link": "./images/sprite.svg#facebook",
+                "label": "Facebook link"
+            },
+            {
+            "link": "./images/sprite.svg#linkedin",
+                "label": "LinkedIn link"
+            }]
+    },
+    {
+        "name": "Андрей Шевченко",
+        "specialty": "Marketing",
+        "foto": "./images/andrei/andrei-450.jpg",
+        "alt": "фотография Андрея Шевченко",
+        "source-450-webp": "./images/andrei/andrei-450.webp    450w, ./images/andrei/andrei-450@2x.webp 900w",
+        "source-450-jpg": "./images/andrei/andrei-450.jpg    450w, ./images/andrei/andrei-450@2x.jpg 900w",
+        "source-270-webp": "./images/andrei/andrei-270.webp    270w, ./images/andrei/andrei-270@2x.webp 540w",
+        "source-270-jpg": "./images/andrei/andrei-270.jpg    270w, ./images/andrei/andrei-270@2x.jpg 540w",
+        "source-354-webp": "./images/andrei/andrei-354.webp    354w, ./images/andrei/andrei-354@2x.webp 708w",
+        "source-354-jpg": "./images/andrei/andrei-354.jpg    354w, ./images/andrei/andrei-354@2x.jpg 708w",
+        "social": [{
+            "link": "./images/sprite.svg#instagram",
+                "label": "Instagram link"
+            },
+            {
+            "link": "./images/sprite.svg#twitter",
+                "label": "Twitter link"
+            },
+            {
+            "link": "./images/sprite.svg#facebook",
+                "label": "Facebook link"
+            },
+            {
+            "link": "./images/sprite.svg#linkedin",
+                "label": "LinkedIn link"
+            }]
+    },
+    {
+        "name": "Иван Николаев",
+        "specialty": "UI Designer",
+        "foto": "./image/ivan/ivan-450.jpg",
+        "alt": "фотография Ивана Николаева",
+        "source-450-webp": "./images/ivan/ivan-450.webp    450w, ./images/ivan/ivan-450@2x.webp 900w",
+        "source-450-jpg": "./images/ivan/ivan-450.jpg    450w, ./images/ivan/ivan-450@2x.jpg 900w",
+        "source-270-webp": "./images/ivan/ivan-270.webp    270w, ./images/ivan/ivan-270@2x.webp 540w",
+        "source-270-jpg": "./images/ivan/ivan-270.jpg    270w, ./images/ivan/ivan-270@2x.jpg 540w",
+        "source-354-webp": "./images/ivan/ivan-354.webp    354w, ./images/ivan/ivan-354@2x.webp 708w",
+        "source-354-jpg": "./images/ivan/ivan-354.jpg    354w, ./images/ivan/ivan-354@2x.jpg 708w",
+        "social": [{
+            "link": "./images/sprite.svg#instagram",
+                "label": "Instagram link"
+            },
+            {
+            "link": "./images/sprite.svg#twitter",
+                "label": "Twitter link"
+            },
+            {
+            "link": "./images/sprite.svg#facebook",
+                "label": "Facebook link"
+            },
+            {
+            "link": "./images/sprite.svg#linkedin",
+                "label": "LinkedIn link"
+            }]
+    }
+]

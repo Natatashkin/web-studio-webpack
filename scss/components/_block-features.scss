@@ -1,0 +1,104 @@
+/*============== Стилизация блока Преимущества =============== */
+.section {
+  color: $text-color;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
+}
+
+.top-padding {
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  margin-top: 0;
+
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+.section-list {
+  @extend %list;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.section-item {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
+  }
+}
+.features-item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.icon {
+  @include centeredFlex(flex);
+  width: inherit;
+  height: 120px;
+  padding: 25px auto;
+
+  background-color: $bg-secondary-color;
+  border-radius: 4px;
+
+  .icon-antenna,
+  .icon-clock,
+  .icon-diagram,
+  .icon-astronaut {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.section-subtitle {
+  text-transform: uppercase;
+  font-size: inherit;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.section-text {
+  line-height: 1.71;
+  margin: 0;
+}

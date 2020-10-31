@@ -1,0 +1,57 @@
+<!--- модальное окно --->
+
+<div data-modal class="backdrop is-hidden">
+    <form action="" class="cta-form">
+        <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+
+        <div class="form-field">
+            <input type="text" class="form-input" name="user-name" id="user-name" placeholder=" " />
+            <label for="user-name" class="form-label">Имя</label>
+            <svg class="form-icon">
+                <use href="./images/form-sprite.svg#person-black"></use>
+            </svg>
+        </div>
+
+        <div class="form-field">
+            <input type="tel" class="form-input" name="user-tel" id="user-tel" placeholder=" " />
+            <label for="user-tel" class="form-label">Телефон</label>
+            <svg class="form-icon">
+                <use href="./images/form-sprite.svg#phone-black"></use>
+            </svg>
+        </div>
+
+        <div class="form-field">
+            <input type="email" class="form-input" name="user-email" id="user-email" placeholder=" " />
+            <label for="user-email" class="form-label">Почта</label>
+            <svg class="form-icon">
+                <use href="./images/form-sprite.svg#email-black"></use>
+            </svg>
+        </div>
+
+        <div class="form-comment">
+            <textarea class="comment-text" name="comment" id="comment"></textarea>
+            <label for="comment" class="comment-label">Комментарий</label>
+        </div>
+
+        <!-- Вариант 1 -  с вложеным input в label -->
+
+        <label class="form-policy">
+            <input class="policy visually-hidden" type="checkbox" name="policy" id="policy" />
+            <span class="checkbox-icon"></span>
+            <span>
+                Соглашаюсь с рассылкой и принимаю &nbsp;
+                <a href="#" class="policy-link">Условия договора</a>
+            </span>
+        </label>
+
+        <button type="submit" class="button form-button">
+            Отправить
+        </button>
+
+        <div data-modal-close class="close-button">
+            <svg class="close-icon">
+                <use href="./images/form-sprite.svg#close-black"></use>
+            </svg>
+        </div>
+    </form>
+</div>

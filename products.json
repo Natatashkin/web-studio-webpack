@@ -1,0 +1,21 @@
+[
+    {
+        "srcset": "./images/products/desktop-370.jpg 1x, ./images/products/desktop-740.jpg 2x",
+        "src": "./images/products/desktop-370.jpg",
+        "alt": "Десктопные приложения",
+        "product-subtitle": "Десктопные приложения"
+    },
+    {
+        "srcset": "./images/products/mob-370.jpg 1x, ./images/products/mob-740.jpg 2x",
+        "src": "./images/products/mob-370.jpg",
+        "alt": "Мобильные приложения",
+        "product-subtitle": "Мобильные приложения"
+    },
+    {
+        "srcset": "./images/products/design-370.jpg 1x, ./images/products/design-740.jpg 2x",
+        "src": "./images/products/design-370.jpg",
+        "alt": "Дизайнерские решения",
+        "product-subtitle": "Дизайнерские решения"
+    }
+
+]

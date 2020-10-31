@@ -1,0 +1,118 @@
+/* =========Стилизация блока Постоянные клиенты ================= */
+.client {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.client-item {
+  flex-basis: calc((100% - 2 * 30px) / 2);
+  margin: 15px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
+}
+
+.section-logo {
+  width: 100%;
+  height: 90px;
+  @include centeredFlex(inline-flex);
+
+  text-decoration: none;
+  border: 1px solid $svg-color;
+  border-radius: 4px;
+  fill: $svg-color;
+
+  @include transitionProperty(border);
+
+  &:hover,
+  &:focus {
+    border: 1px solid $akcent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
+
+.icon-client-first {
+  width: 45px;
+  height: 50px;
+
+  @include transitionProperty(fill);
+
+  .section-logo:hover &,
+  .section-logo:focus & {
+    fill: $akcent-color;
+  }
+}
+.icon-client-second {
+  width: 40px;
+  height: 52px;
+
+  @include transitionProperty(fill);
+
+  .section-logo:hover &,
+  .section-logo:focus & {
+    fill: $akcent-color;
+  }
+}
+
+.icon-client-third {
+  width: 41px;
+  height: 43px;
+
+  @include transitionProperty(fill);
+
+  .section-logo:hover &,
+  .section-logo:focus & {
+    fill: $akcent-color;
+  }
+}
+
+.icon-client-fourth {
+  width: 80px;
+  height: 42px;
+
+  @include transitionProperty(fill);
+
+  .section-logo:hover &,
+  .section-logo:focus & {
+    fill: $akcent-color;
+  }
+}
+
+.icon-client-fifth {
+  width: 59px;
+  height: 47px;
+
+  @include transitionProperty(fill);
+
+  .section-logo:hover &,
+  .section-logo:focus & {
+    fill: $akcent-color;
+  }
+}
+
+.icon-client-sixth {
+  width: 89px;
+  height: 46px;
+
+  @include transitionProperty(fill);
+
+  .section-logo:hover &,
+  .section-logo:focus & {
+    fill: $akcent-color;
+  }
+}

@@ -1,0 +1,15 @@
+<section class="section products">
+    <div class="container">
+        <h2 class="section-title">Чем мы занимаемся</h2>
+        <ul class="section-list product-list">
+            {{#each products}}
+            <li class="section-item wide-card">
+                <img srcset="{{srcset}}" src="{{src}}" alt="{{alt}}" width="370" />
+                <h3 class="section-subtitle secondary-color">
+                    {{product-subtitle}}
+                </h3>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>
